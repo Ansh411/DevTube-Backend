@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use("/api/suggest", suggestRouter);
+app.use("/api/search", suggestRouter);
 
 
 app.get("/", (_, res) => {
