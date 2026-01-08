@@ -13,8 +13,8 @@ app.use(express.json());
 app.use("/api/search", suggestRouter);
 
 
-app.get("/", (_, res) => {
-  res.json({ status: "OK", service: "YouTube Search Proxy" });
+app.get("/health", (_, res) => {
+  res.send("YouTube Search Proxy");
 });
 
 export default app;
